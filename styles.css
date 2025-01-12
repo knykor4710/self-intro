@@ -1,5 +1,5 @@
 h1 {
-  color: lightsteelblue;
+  color: #6a75ca;
 }
 header ul {
   list-style: none;
@@ -12,7 +12,7 @@ header {
   justify-content: space-between;
   padding-left: 60px;
   padding-right: 60px;
-  background-color: white;
+  background-color: #6a75ca;
   position: fixed;
   top: 0;
   left: 0;
@@ -21,19 +21,19 @@ header {
 }
 header ul > li {
   font-size: 15px;
-  color: #4ab6ff;
+  color: #eff2f8;
 }
 body {
-  background-color: #eaeaea;
+  background-color: #ffffff;
   padding-top: 45px;
 }
 .banner {
-  background-color: #4ab6ff;
+  background-color: #eff2f8;
   text-align: center;
   padding: 30px;
 }
 .banner h1 {
-  color: #fff;
+  color: #6a75ca;
   margin: 0px;
 }
 .highlight {
@@ -91,11 +91,11 @@ body {
 .about h2 {
   text-align: center;
   font-size: 3em;
-  color: #4ab6ff;
+  color: #6a75ca;
 }
 .about h3 {
   font-size: 2em;
-  color: #4ab6ff;
+  color: #6a75ca;
 }
 .contact-info {
   font-size: 1rem;
@@ -126,7 +126,7 @@ body {
 .goal-title {
   font-size: 50px;
   font-weight: bold;
-  color: #4ab6ff;
+  color: #6a75ca;
 }
 
 .goal-container {
@@ -144,7 +144,7 @@ body {
 }
 
 .card-header {
-  background-color: #4ab6ff;
+  background-color: #6a75ca;
   color: white;
   font-weight: bold;
   text-align: center;
@@ -161,7 +161,7 @@ body {
   width: 140px;
   height: 140px;
   margin: auto;
-  border: 1px solid #4ab6ff;
+  border: 1px solid #ffffff;
 }
 
 .card-text {
@@ -200,7 +200,7 @@ body {
 .contact-title {
   font-size: 50px;
   font-weight: bold;
-  color: #4ab6ff;
+  color: #6a75ca;
   text-align: center;
 }
 
@@ -278,9 +278,9 @@ body {
 }
 
 .btn {
-  background-color: #1f5eff;
+  background-color: #6a75ca;
   border-radius: 16px;
-  color: #fff;
+  color: #eff2f8;
   border: none;
   width: 80px;
   height: 30px;
@@ -289,22 +289,22 @@ body {
 }
 
 .btn:hover {
-  background-color: #fff;
-  color: #1f5eff;
+  background-color: #eff2f8;
+  color: #6a75ca;
 }
 .add-btn,
 .delete-btn {
   border-radius: 16px;
   font-size: 18px;
   color: white;
-  background-color: #4ab6ff;
+  background-color: #6a75ca;
   border: none;
   border-radius: 5px;
 }
 
 .add-btn:hover,
 .delete-btn:hover {
-  color: #1f5eff;
+  color: #ffffff;
 }
 
 input {

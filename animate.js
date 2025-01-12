@@ -36,3 +36,16 @@ contact_btn.onclick = () => {
     behavior: "smooth",
   });
 };
+
+const more_btn = document.getElementById("more-btn");
+more_btn.onclick = () => {
+  const aboutSection = document.querySelector(".about");
+  const headerOffset = 80;
+  const elementPosition = aboutSection.getBoundingClientRect().top;
+  const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth",
+  });
+};
