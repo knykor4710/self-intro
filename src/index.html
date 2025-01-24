@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kimna's Portfolio</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../src/css/base.css" />
+    <link rel="stylesheet" href="../src/css/components.css" />
+    <link rel="stylesheet" href="../src/css/layout.css" />
+    <link rel="stylesheet" href="../src/css/sections.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">My Portfolio</div>
+      <nav>
+        <ul>
+          <li id="header-about">ABOUT</li>
+          <li id="header-goal">GOAL</li>
+          <li id="header-contact">CONTACT</li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+      <h1>안녕하세요!</h1>
+      <h1>제 이름은 <span class="highlight">김나연</span>입니다.</h1>
+      <img src="../assets/images/others/mimichi.webp" alt="배너 이미지" />
+      <button class="btn" id="more-btn">더보기</button>
+    </section>
+
+    <section class="about">
+      <h2>ABOUT</h2>
+      <div class="about-container">
+        <!-- Left Profile Card -->
+        <div class="profile-card">
+          <div class="card-overlay"></div>
+          <div class="profile-header">
+            <div class="profile-image">
+              <img
+                src="../assets/images/others/profile_example.jpg"
+                alt="프로필 이미지"
+              />
+            </div>
+            <h3>KIM<br />Nayeon</h3>
+          </div>
+          <div class="info-section">
+            <div>
+              <i class="fas fa-phone-alt"></i>
+              <!-- 전화 아이콘 -->
+              <span>+82&#41; 10-7515-0975</span>
+            </div>
+            <div>
+              <i class="fas fa-envelope"></i>
+              <!-- 이메일 아이콘 -->
+              <span>kim.nayeon4710@gmail.com</span>
+            </div>
+            <div>
+              <i class="fas fa-map-marker-alt"></i>
+              <!-- 위치 아이콘 -->
+              <span>경상북도 구미시</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Grid Section -->
+        <div class="grid-container">
+          <div class="grid-item">
+            <h4>EDUCATION</h4>
+            <p>- 구미신당초등학교 졸업</p>
+            <p>- 구미인덕중학교 2학년</p>
+          </div>
+          <div class="grid-item">
+            <h4>HOBBIES</h4>
+            <p>- 스페인어</p>
+            <p>- 산책</p>
+          </div>
+          <div class="grid-item">
+            <h4>FAMILY</h4>
+            <p>- 엄마</p>
+            <p>- 아빠</p>
+            <p>- 언니</p>
+          </div>
+          <div class="grid-item">
+            <h4>SKILLS</h4>
+            <p>- 디지털정보활용능력 <br />(DIAT-스프레드시트)</p>
+            <p>- 스페인어 능력</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Goal Section -->
+    <section class="goal">
+      <h2>GOAL</h2>
+      <button id="add-goal-btn">추가</button>
+      <button id="delete-goal-btn">삭제</button>
+      <div class="goal-container">
+        <!-- Goal Cards -->
+        <div class="goal-card">
+          <h3>스페인 가기</h3>
+          <p>스페인어 하기<br />츄러스 먹기<br />바다 가기</p>
+        </div>
+        <div class="goal-card">
+          <h3>시험 잘치기</h3>
+          <p>
+            기가 시험 90점 이상<br />역사 시험 100점<br />도덕 시험 90점 이상
+          </p>
+        </div>
+        <div class="goal-card">
+          <h3>열심히 놀기</h3>
+          <p>친구들과 영화보러 가기<br />콘서트 가기<br />웹툰 많이 보기</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <h2>CONTACT</h2>
+      <div class="contact-container">
+        <div class="contact-card">
+          <p>
+            GMAIL: kim.nayeon4710@gmail.com<br />
+            NUMBER: 010-7515-0975
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>PORTFOLIO</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../src/js/section.js"></script>
+    <!-- <script src="../src/js/modal.js"></script> -->
+    <script src="../src/js/goalbtn.js"></script>
+    <script src="../src/js/addContent.js"></script>
+    <script src="../src/js/profileCard.js"></script>
+  </body>
+</html>

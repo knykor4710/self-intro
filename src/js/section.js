@@ -1,7 +1,17 @@
+// Move to About Section
+const logo_btn = document.getElementsByClassName("logo")[0];
+logo_btn.onclick = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
+// Move to About Section
 const about_btn = document.getElementById("header-about");
 about_btn.onclick = () => {
   const aboutSection = document.querySelector(".about");
-  const headerOffset = 80;
+  const headerOffset = 58;
   const elementPosition = aboutSection.getBoundingClientRect().top;
   const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
@@ -11,10 +21,11 @@ about_btn.onclick = () => {
   });
 };
 
+// Move to Goal Section
 const goal_btn = document.getElementById("header-goal");
 goal_btn.onclick = () => {
   const goalSection = document.querySelector(".goal");
-  const headerOffset = 80;
+  const headerOffset = 58;
   const elementPosition = goalSection.getBoundingClientRect().top;
   const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
@@ -24,10 +35,11 @@ goal_btn.onclick = () => {
   });
 };
 
+// Move to Contact Section
 const contact_btn = document.getElementById("header-contact");
 contact_btn.onclick = () => {
   const contactSection = document.querySelector(".contact");
-  const headerOffset = 80;
+  const headerOffset = 58;
   const elementPosition = contactSection.getBoundingClientRect().top;
   const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
@@ -37,10 +49,11 @@ contact_btn.onclick = () => {
   });
 };
 
+// Move to About Section
 const more_btn = document.getElementById("more-btn");
 more_btn.onclick = () => {
   const aboutSection = document.querySelector(".about");
-  const headerOffset = 80;
+  const headerOffset = 58;
   const elementPosition = aboutSection.getBoundingClientRect().top;
   const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
