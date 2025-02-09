@@ -21,6 +21,20 @@ about_btn.onclick = () => {
   });
 };
 
+// Move to About Section
+const music_btn = document.getElementById("header-music");
+music_btn.onclick = () => {
+  const musicSection = document.querySelector(".music");
+  const headerOffset = 58;
+  const elementPosition = musicSection.getBoundingClientRect().top;
+  const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth",
+  });
+};
+
 // Move to Goal Section
 const goal_btn = document.getElementById("header-goal");
 goal_btn.onclick = () => {

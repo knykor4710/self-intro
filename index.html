@@ -21,6 +21,7 @@
       <nav>
         <ul>
           <li id="header-about">ABOUT</li>
+          <li id="header-music">MUSIC</li>
           <li id="header-goal">GOAL</li>
           <li id="header-contact">CONTACT</li>
         </ul>
@@ -95,7 +96,11 @@
         </div>
       </div>
     </section>
-  </section>
+
+    <section class="music">
+      <h2>MUSIC</h2>
+      <button onclick="window.location.href='./src/html/music.html'">music page 이동</button>
+    </section>
 
     <!-- Goal Section -->
     <section class="goal">
@@ -137,26 +142,15 @@
         </div>
     </section>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-      ScrollReveal().reveal('.about, .goal, .contact', {
-        distance: '100px',    
-        origin: 'bottom',   
-        duration: 1500,       
-        easing: 'ease-out',   
-        reset: false
-      });
-    </script>
-  </body>
-</html>
-
     <!-- Footer -->
     <footer>
       <p>PORTFOLIO</p>
     </footer>
 
     <!-- Scripts -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./src/js/section.js"></script>
+    <script src="./src/js/scrollReveal.js"></script>
     <!-- <script src="../src/js/modal.js"></script> -->
     <script src="./src/js/goalbtn.js"></script>
     <script src="./src/js/addContent.js"></script>

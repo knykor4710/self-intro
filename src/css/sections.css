@@ -261,6 +261,21 @@
   line-height: 1.4;
 }
 
+.music {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 화면 높이 전체 */
+  background: linear-gradient(135deg, #ffffff, #bee2a6); /* 네온 그라데이션 */
+  background-size: 200% 200%; /* 애니메이션 효과를 위한 배경 크기 */
+  animation: gradient-shift 6s ease infinite; /* 부드러운 그라데이션 전환 */
+  color: #ffffff; /* 흰색 텍스트 */
+  text-align: center; /* 중앙 정렬 */
+  position: relative; /* 오버레이 등을 위해 상대적 위치 설정 */
+  overflow: hidden; /* 초과 요소 숨김 */
+}
+
 /* Goal Section */
 .goal {
   text-align: center;
