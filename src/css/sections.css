@@ -98,7 +98,6 @@
   text-transform: uppercase;
   letter-spacing: 3px;
   background: linear-gradient(90deg, #97c99a, #d5ebb4);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
   z-index: 10;
@@ -311,7 +310,6 @@
   text-transform: uppercase;
   letter-spacing: 3px;
   background: linear-gradient(90deg, #97c99a, #d5ebb4);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
   z-index: 10;
@@ -352,7 +350,23 @@
   text-transform: uppercase;
   letter-spacing: 3px;
   background: linear-gradient(90deg, #97c99a, #d5ebb4);
-  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.music h2 {
+  position: absolute;
+  top: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, #97c99a, #d5ebb4);
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
   z-index: 10;
