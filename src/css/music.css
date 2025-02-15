@@ -1,9 +1,4 @@
 .music h2 {
-  text-align: center;
-  font-size: 3em;
-}
-
-.music h2 {
   position: absolute;
   top: 2vh;
   left: 50%;
@@ -14,9 +9,10 @@
   letter-spacing: 3px;
   background: linear-gradient(90deg, #97c99a, #d5ebb4);
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
   z-index: 10;
-  padding: 10px 20px;
+  padding: 50px 20px;
   border-radius: 10px;
 }
 

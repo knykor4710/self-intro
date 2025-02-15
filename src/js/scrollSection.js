@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  ScrollReveal().reveal(".about, .goal, .contact", {
+  ScrollReveal().reveal(".about, .goal, .contact, .music", {
     distance: "100px",
     origin: "bottom",
     duration: 1500,
