@@ -15,41 +15,6 @@
   padding: 50px 20px;
   border-radius: 10px;
 }
-
-.music-container {
-  margin-top: 100px;
-  padding: 100px;
-  flex: 2; /* 오른쪽 영역을 더 넓게 설정 */
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* 공백으로 변경 */
-  gap: 50px;
-  width: 100%;
-}
-
-.music-item {
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  padding: 30px;
-  text-align: center;
-  font-size: 1.2em;
-  color: #333333;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.music-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
-}
-
-.music-item h4 {
-  font-size: 1.6em;
-  color: #75ae74;
-  margin-bottom: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
 .music {
   padding: 0;
   height: 100vh; /* 화면 꽉 채우기 */
@@ -64,4 +29,21 @@
   ); /* 세련된 배경 그라데이션 */
   text-align: center;
   position: relative;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 25px;
+  background-color: #ffffff; /* 버튼 배경 */
+  color: #bee2a6; /* 텍스트 색상 */
+  border: 1px solid #75ae74;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: #bee2a6;
+  color: #ffffff;
+  transform: scale(1.1); /* 확대 효과 */
 }
