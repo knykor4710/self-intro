@@ -34,20 +34,29 @@
 
 /* Modals */
 .modal {
+  z-index: 100;
   display: none;
   position: fixed;
-  top: 0;
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  justify-content: center;
-  align-items: center;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-close {
+  font-size: 30px;
 }
 
 .modal-contents {
+  position: relative;
+  width: 300px;
   background-color: #ffffff;
-  padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
 }
