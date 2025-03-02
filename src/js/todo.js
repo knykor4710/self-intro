@@ -5,7 +5,7 @@ const todoModal = document.getElementById("todo-modal");
 const todoClose = document.getElementsByClassName("todo-close")[0];
 
 todoAddBtn.onclick = () => {
-  todoModal.style.display = "block";
+  todoModal.style.display = "flex";
 };
 
 todoClose.onclick = () => {

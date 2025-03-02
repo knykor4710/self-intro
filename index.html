@@ -188,29 +188,20 @@
 
     <div id="todo-modal" class="modal">
       <div class="modal-contents">
+        <span class="todo-close">&times;</span>
         <div class="modal-header">
-          <span class="space"> </span>
           <h2>새 To Do 항목 추가</h2>
-          <span class="todo-close">&times;</span>
         </div>
         <form id = "todo-form">
-          <label>Title:</label>
-          <input type="text" name="todo-title" required />
-          <br>
-          <label>Start Date:</label>
-          <input type="date" name="todo-start-date" required />
-          <br>
-          <label>Due Date:</label>
-          <input type="date" name="todo-due-date" required />
-          <br>
-          <label>Status:</label>
-          <select name="todo-status">
+          <label>Title: <input type="text" name="todo-title" required /></label>
+          <label>Start Date: <input type="date" name="todo-start-date" required /></label>
+          <label>Due Date: <input type="date" name="todo-due-date" required /></label>
+          <label>Status: <select name="todo-status">
             <option value="active">Active</option>
             <option value="inactive">Inactive</option>
             <option value="done">Done</option>
             <option value="pending">Pending</option>
-          </select>
-          <br>
+          </select></label>
           <button type="submit">저장하기</button>
         </form>
       </div>

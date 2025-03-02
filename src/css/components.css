@@ -44,15 +44,6 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.modal-header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.todo-close {
-  font-size: 30px;
-}
-
 .modal-contents {
   position: relative;
   width: 300px;

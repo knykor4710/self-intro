@@ -429,20 +429,23 @@ td {
 }
 
 #todo-modal {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
 
 #todo-modal .modal-contents {
-  width: 500px;
-  height: 300px;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
 }
 
 #todo-form {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 8px;
 }
 
 #todo-form label {
@@ -450,8 +453,10 @@ td {
 }
 
 #todo-modal button[type="submit"] {
-  padding: 5px 10px;
-  font-size: 0.8em;
+  width: 100%;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 16px;
   font-weight: bold;
   background-color: #97c99a;
   color: #fff;
@@ -460,8 +465,13 @@ td {
 #todo-modal .modal-header h2 {
   font-size: 24px;
   color: #97c99a;
-  margin-top: 20px;
   display: flex;
   align-items: center; /* 수직 중앙 정렬 */
   justify-content: center; /* 수평 중앙 정렬 */
+  margin-bottom: 8px;
+}
+
+.todo-close {
+  font-size: 30px;
+  position: fixed;
 }
