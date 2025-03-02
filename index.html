@@ -104,16 +104,15 @@
 
     <section class="to-do">
       <h2>TO-DO LIST</h2>
-      <button id="todo-add-btn">추가하기</button>
       <table class="to-do-list">
-        <tr class="todo-header">
+        <tr>
           <th>Num</th>
           <th>Title</th>
           <th>Start Date</th>
           <th>Due Date</th>
           <th>Status</th>
         </tr>
-        <tr class="todo-contents">
+        <tr>
           <td>1</td>
           <td>수학 문제집 풀기</td>
           <td>2024/05/01</td>
@@ -127,25 +126,29 @@
             </select>
           </td>
         </tr>
+        <tr>
+          <td>1</td>
+          <td>수학 문제집 풀기</td>
+          <td>2024/05/01</td>
+          <td>2025/05/01</td>
+          <td>Done</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>수학 문제집 풀기</td>
+          <td>2024/05/01</td>
+          <td>2025/05/01</td>
+          <td>Done</td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
       </table>
     </section>
-
-    <template id="todo-template">
-      <tr class="todo-contents">
-        <td class="num"></td>
-        <td class="title"></td>
-        <td class="start-date"></td>
-        <td class="due-date"></td>
-        <td>
-          <select name="staus-dropdown">
-            <option value="active"></option>
-            <option value="inactive"></option>
-            <option value="done"></option>
-            <option value="pending"></option>
-          </select>
-        </td>
-      </tr>
-    </template>
 
     <section class="music">
       <h2>MUSIC</h2>
@@ -193,36 +196,6 @@
         </div>
     </section>
 
-    <div id="todo-modal" class="modal">
-      <div class="modal-contents">
-        <div class="modal-header">
-          <span class="space"> </span>
-          <h2>새 To Do 항목 추가</h2>
-          <span class="todo-close">&times;</span>
-        </div>
-        <form id = "todo-form">
-          <label>Title:</label>
-          <input type="text" name="todo-title" required />
-          <br>
-          <label>Start Date:</label>
-          <input type="date" name="todo-start-date" required />
-          <br>
-          <label>Due Date:</label>
-          <input type="date" name="todo-due-date" required />
-          <br>
-          <label>Status:</label>
-          <select name="todo-status">
-            <option value="active">Active</option>
-            <option value="inactive">Inactive</option>
-            <option value="done">Done</option>
-            <option value="pending">Pending</option>
-          </select>
-          <button type="submit">저장하기</button>
-        </form>
-      </div>
-    </div>
-
-
     <!-- Footer -->
     <footer>
       <p>깃을 위한 테스트 코드</p>
@@ -237,6 +210,5 @@
     <script src="./src/js/goalbtn.js"></script>
     <script src="./src/js/addContent.js"></script>
     <script src="./src/js/profileCard.js"></script>
-    <script src="./src/js/todo.js"></script>
   </body>
 </html>
