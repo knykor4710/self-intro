@@ -279,7 +279,9 @@
 
 .to-do-list {
   background-color: #fff;
+  max-width: 1200px; /* 중간 크기로 제한 */
   width: 100%;
+  padding: 60px 20px;
   border-collapse: collapse;
   border-radius: 12px;
   overflow: hidden;
