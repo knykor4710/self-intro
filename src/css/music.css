@@ -47,3 +47,21 @@
   color: #ffffff;
   transform: scale(1.1); /* 확대 효과 */
 }
+
+.music {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-direction: row;
+}
+
+.music-list-container {
+  margin-top: px;
+  background-color: lightgray;
+  width: 30%; /* 3개가 고르게 배치되게 30%씩 */
+  height: 70%;
+  text-align: center;
+  line-height: 200px;
+  box-sizing: border-box; /* padding, border 포함해서 크기 계산 */
+  border: 1px solid #ddd;
+}

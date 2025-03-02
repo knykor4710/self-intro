@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <style> *{font-family: "Atkinson Hyperlegible Mono", sans-serif;}</style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
   </head>
   <body>
     <!-- Header -->
@@ -79,24 +80,28 @@
         <div class="grid-container">
           <div class="grid-item">
             <h4>EDUCATION</h4>
-            <p>- 구미신당초등학교 졸업</p>
-            <p>- 구미인덕중학교 2학년</p>
+            <p> <span class="material-symbols-outlined">
+            school </span> 구미신당초등학교 졸업 </p>
+            <p>구미인덕중학교 2학년</p>
           </div>
           <div class="grid-item">
             <h4>HOBBIES</h4>
-            <p>- 스페인어</p>
-            <p>- 산책</p>
+            <p> <span class="material-symbols-outlined"> 
+            language 한국어, 영어, 스페인어 </span> </p>
+            <p> <span class="material-symbols-outlined">
+            footprint 산책 </span> </p>
           </div>
           <div class="grid-item">
             <h4>FAMILY</h4>
-            <p>- 엄마</p>
-            <p>- 아빠</p>
-            <p>- 언니</p>
+            <p> <span class="material-symbols-outlined">
+            family_restroom 엄마, 아빠, 언니 , 나 </span> </p>
           </div>
           <div class="grid-item">
             <h4>SKILLS</h4>
-            <p>- 디지털정보활용능력 <br />(DIAT-스프레드시트)</p>
-            <p>- 스페인어 능력</p>
+            <p> <span class="material-symbols-outlined">
+            license 디지털정보활용능력 </P> <P>(DIAT-스프레드시트)</p>
+            <p> <span class="material-symbols-outlined">
+            license </span> 스페인어 능력 </p>
           </div>
         </div>
       </div>
@@ -104,51 +109,48 @@
 
     <section class="to-do">
       <h2>TO-DO LIST</h2>
-      <table class="to-do-list">
-        <tr>
-          <th>Num</th>
-          <th>Title</th>
-          <th>Start Date</th>
-          <th>Due Date</th>
-          <th>Status</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>수학 문제집 풀기</td>
-          <td>2024/05/01</td>
-          <td>2025/05/01</td>
-          <td>
-            <select name="staus-dropdown">
-              <option value="active">Active</option>
-              <option value="inactive">Inactive</option>
-              <option value="done">Done</option>
-              <option value="pending">Pending</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>수학 문제집 풀기</td>
-          <td>2024/05/01</td>
-          <td>2025/05/01</td>
-          <td>Done</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>수학 문제집 풀기</td>
-          <td>2024/05/01</td>
-          <td>2025/05/01</td>
-          <td>Done</td>
-        </tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-      </table>
-    </section>
+      <button class="btn" id="todo-add-btn">추가하기</button>
+    <table class="to-do-list">
+      <tr class="todo-header">
+        <th>Num</th>
+        <th>Title</th>
+        <th>Start Date</th>
+        <th>Due Date</th>
+        <th>Status</th>
+      </tr>
+      <tr class="todo-contents">
+        <td>1</td>
+        <td>수학 문제집 풀기</td>
+        <td>2024/05/01</td>
+        <td>2025/05/01</td>
+        <td>
+          <select name="staus-dropdown">
+            <option value="active">Active</option>
+            <option value="inactive">Inactive</option>
+            <option value="done">Done</option>
+            <option value="pending">Pending</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <template id="todo-template">
+    <tr class="todo-contents">
+      <td class="num"></td>
+      <td class="title"></td>
+      <td class="start-date"></td>
+      <td class="due-date"></td>
+      <td>
+        <select name="staus-dropdown">
+          <option value="active"></option>
+          <option value="inactive"></option>
+          <option value="done"></option>
+          <option value="pending"></option>
+        </select>
+      </td>
+    </tr>
+  </template>
 
     <section class="music">
       <h2>MUSIC</h2>
@@ -182,6 +184,40 @@
       </div>
     </section>
 
+    <div id="todo-modal" class="modal">
+      <div class="modal-contents">
+        <div class="modal-header">
+          <span class="space"> </span>
+          <h2>새 To Do 항목 추가</h2>
+          <span class="todo-close">&times;</span>
+        </div>
+        <form id = "todo-form">
+          <label>Title:</label>
+          <input type="text" name="todo-title" required />
+          <br>
+          <label>Start Date:</label>
+          <input type="date" name="todo-start-date" required />
+          <br>
+          <label>Due Date:</label>
+          <input type="date" name="todo-due-date" required />
+          <br>
+          <label>Status:</label>
+          <select name="todo-status">
+            <option value="active">Active</option>
+            <option value="inactive">Inactive</option>
+            <option value="done">Done</option>
+            <option value="pending">Pending</option>
+          </select>
+          <br>
+          <button type="submit">저장하기</button>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+
     <!-- Contact Section -->
     <section class="contact">
       <h2>CONTACT</h2>
@@ -210,5 +246,6 @@
     <script src="./src/js/goalbtn.js"></script>
     <script src="./src/js/addContent.js"></script>
     <script src="./src/js/profileCard.js"></script>
+    <script src="./src/js/todo.js"></script>
   </body>
 </html>
